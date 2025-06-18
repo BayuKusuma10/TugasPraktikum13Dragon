@@ -10,7 +10,7 @@
 </head>
 <body style="margin: 0; overflow: hidden;">
   <a-scene embedded arjs>
-    <a-marker preset="hiro">
+    <a-marker type="pattern" url="assets/pattern-naga.patt">
       <a-entity 
         gltf-model="model/icy_dragon.glb" 
         scale="0.02 0.02 0.02" 
@@ -30,10 +30,8 @@
         animation-mixer="clip: Qishilong_fly2; loop: repeat;">
       </a-entity>
 
+      <!-- Suara naga -->
       <a-sound src="url(./dragon-roar-high-intensity-36564.mp3)" autoplay="true" loop="true"></a-sound>
     </a-marker>
 
-    <a-entity camera></a-entity>
-  </a-scene>
-</body>
-</html>
+    <a-entity camera></
