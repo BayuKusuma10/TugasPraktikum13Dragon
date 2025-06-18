@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>TUGAS NAGA</title>
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -15,20 +14,9 @@
         gltf-model="model/icy_dragon.glb" 
         scale="0.02 0.02 0.02" 
         position="0 0 0.7" 
-        animation-mixer="clip: Qishilong_attack01; loop: repeat;">
+        animation-mixer="clip: *; loop: repeat;">
       </a-entity>
-      <a-entity 
-        gltf-model="model/icy_dragon.glb" 
-        scale="0.02 0.02 0.02" 
-        position="0 0.5 0" 
-        animation-mixer="clip: Qishilong_CG3_SC01_C03_DH; loop: repeat;">
-      </a-entity>
-      <a-entity 
-        gltf-model="model/icy_dragon.glb" 
-        scale="0.02 0.02 0.02" 
-        position="0 0 -0.7" 
-        animation-mixer="clip: Qishilong_fly2; loop: repeat;">
-      </a-entity>
+      
 
       <!-- Suara naga -->
       <a-sound src="url(./dragon-roar-high-intensity-36564.mp3)" autoplay="true" loop="true"></a-sound>
